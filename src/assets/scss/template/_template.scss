@@ -1,19 +1,238 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
   background: #f3f3f3 !important;
 }
 
-.container.header {
-  background: #f3f3f3;
+.container {
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+.logo-container {
+  height: 100px;
+}
+.logo-column {
+  background: #fff5eb;
+  .logo {
+    width: 50%;
+    height: 60px;
+    padding: 20px 160px;
+  }
+}
+
+.nav-container td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #f09800;
+}
+.nav-row {
+  display: revert !important;
+}
+.nav-column th {
+  text-align: center;
+  font-weight: 500;
+  color: #ffeed1;
+}
+.header-container {
+  width: 640px;
+  height: 183px;
+  position: relative;
+}
+img.transaction-header {
+  height: max-content;
+  position: absolute;
+}
+.header-text {
+  position: relative;
+  color: #ffeed1;
+  font-size: 40px;
+  font-weight: 700;
+  top: 30%;
+  left: 6%;
+}
+.container.button-container {
+  height: 100px;
+  & span {
+    background-color: #f09800;
+    color: #fff5eb;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 210px;
+    padding: 10px 0px;
+    top: 27%;
+    left: 34%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.receipt-container {
+  height: 46rem;
+  .receipt-top {
+    width: 35rem;
+    height: 40rem;
+    outline: #f09800 2px solid;
+    background-color: #fff5eb;
+    position: relative;
+    left: 6.3%;
+    .summary-text {
+      position: relative;
+      color: #f09800;
+      font-weight: 700;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+    }
+    .divider-line {
+      background-color: #f09800;
+      height: 1.5px;
+      width: 30rem;
+      display: flex;
+      left: 7%;
+      position: relative;
+      margin-top: 15px;
+    }
+  }
+}
+.item-row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 38px;
+  & .item-description {
+    margin: 0px;
+  }
+  .item-title {
+    span {
+      font-weight: 500;
+      color: #005670;
+    }
+  }
+  .item-quantity {
+    & span {
+      color: #005670;
+      font-size: 12px;
+    }
+  }
+  .item-price {
+    padding-top: 20px;
+    span {
+      color: #005670;
+      font-size: 12px;
+      padding-left: 23px;
+    }
+  }
+}
+.order-detail {
+  margin-top: 10px;
+  & span {
+  }
+  th.detail-description.columns {
+    & span {
+      padding-left: 40px;
+      font-size: 14px;
+      color: #005670;
+    }
+  }
+  .detail-price {
+    & span {
+      padding-left: 55px;
+      font-size: 14px;
+      color: #005670;
+    }
+    &.price-nudge span {
+      padding-left: 62px !important;
+    }
+  }
+}
+
+.order-total {
+  margin-top: 10px;
+  .total-title {
+    & span {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #005670;
+      padding-left: 40px;
+    }
+  }
+  .total-price {
+    span {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #005670;
+      padding-left: 67px;
+    }
+  }
+}
+.thanks-row {
+  margin-top: 50px;
+  .thanks-col {
+    background-color: #f09800;
+    padding: 5px 0;
+    display: grid;
+    justify-content: center;
+    & .thanks-text {
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+.rewards-container {
+  height: 21.5rem;
+  background: #fff5eb !important;
+  img {
+    padding-left: 37px;
+    padding-top: 30px;
+  }
+}
+
+.footer-container {
+  height: 15rem;
+  background: #f09800 !important;
+  .email-text {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .privacy-text span {
+    padding-left: 9rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+  }
+  .contact-text span {
+    padding-right: 9rem;
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+  .social-row .columns {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    & img {
+      cursor: pointer;
+    }
+    & .tiktok-logo {
+      padding: 0px;
+      border-radius: 18px;
+      background-color: #fff;
+    }
+  }
+  span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 20px;
+  }
 }
 
 // Full Width Headers
@@ -40,8 +259,8 @@ html,
 
 // Social Media
 table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+  background: #3b5998 !important;
+  border-color: #3b5998;
 }
 
 table.button.twitter table td {
@@ -50,10 +269,108 @@ table.button.twitter table td {
 }
 
 table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+  background: #db4a39 !important;
+  border-color: #db4a39;
 }
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+@media only screen and (min-width: 640px) {
+}
+@media only screen and (max-width: 640px) {
+  html {
+    width: 40rem !important;
+  }
+  .header-text {
+    font-size: 30px;
+    left: 0 !important;
+    padding-left: 13%;
+  }
+  .button-container {
+    position: relative;
+  }
+  .receipt-container {
+    margin: 0;
+  }
+  .receipt-top {
+    margin-left: 0px;
+    width: 26rem !important;
+    position: relative;
+    left: 15% !important;
+    .receipt-content {
+      padding-bottom: 20px;
+    }
+    .divider-line {
+      width: 23rem !important;
+    }
+    .order-detail .detail-price span {
+      padding-left: 30px !important;
+    }
+    .order-detail .detail-price.price-nudge span {
+      padding-left: 38px !important;
+    }
+    table th.total-price span {
+      padding-left: 32px !important;
+    }
+  }
+  .row .item-row {
+    margin-left: 0px;
+    img {
+      display: flex;
+      width: 85%;
+      position: relative;
+      padding-left: 33px;
+      padding-bottom: 20px;
+    }
+    .item-title .columns {
+      padding-left: 40px !important;
+    }
+    .item-quantity .columns {
+      padding-left: 40px !important;
+    }
+    .item-price {
+      padding-top: 0px;
+      span {
+        padding-left: 40px !important;
+      }
+    }
+  }
+  .thanks-col {
+    padding: 10px 0px !important;
+    .thanks-text {
+      font-size: 28px !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .rewards-container {
+    height: 16rem;
+    img {
+      height: 189px !important;
+      left: 11%;
+      position: absolute;
+    }
+  }
+
+  .privacy-text span {
+    padding-left: 8rem !important;
+  }
+  .social-row {
+    width: 25%;
+    .x-logo {
+      width: 30%;
+    }
+    .instagram-logo {
+      width: 30%;
+    }
+    .linkedin-logo {
+      width: 30%;
+    }
+    .tiktok-logo {
+      width: 30%;
+      border-radius: 5px !important;
+    }
+  }
 }

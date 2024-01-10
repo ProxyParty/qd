@@ -3,10 +3,183 @@ layout: index-layout
 subject: My Email Templates
 ---
 
-<container>
+<container class="logo-container">
+  <row>
+    <columns class="logo-column">
+      <img class="logo" src='../assets/img/qdoba-logo.png' height='90' width='90' alt='Company' />
+    </columns>
+  </row>
+</container>
+<container class="nav-container">
+  <row class="nav-row">
+    <columns class="nav-column" large="3" small="3">
+      Home
+    </columns>
+    <columns class="nav-column" large="3" small="3">
+      Menu
+    </columns>
+    <columns class="nav-column" large="3" small="3">
+      Rewards
+    </columns>
+    <columns class="nav-column" large="3" small="3">
+      Locations
+    </columns>
+  </row>
+</container>
+<container class="header-container">
+  <img class="transaction-header" src='../assets/img/header-banner.jpg' height='90' width='90' alt='Company' />
+  <span class="header-text">Your Order Has Been Received!</span>
+</container>
+<container class="button-container">
+  <span>
+    Track Order Progress
+  </span>
+</container>
+<container class="receipt-container">
+  <row class="receipt-top">
+    <columns class="receipt-content">
+      <span class="summary-text">Order Summary</span>
+      <row class="divider-line"></row>
+      <row class="item-row">
+        <columns large="3">
+          <img class="item-img" src="../assets/img/southwest-burrito.avif" height='90' width='90' />
+        </columns>
+        <columns large="6" class="item-description">
+          <row class="item-title">
+            <columns>
+              <span>Southwest Steak Burrito</span>
+            </columns>
+          </row>
+          <row class="item-quantity">
+            <columns>
+              <span>Quantity: 1</span>
+            </columns>
+          </row>
+        </columns>
+        <columns class="item-price" large="3">
+          <span>$13.40</span>
+        </columns>
+      </row>
+      <row class="item-row">
+        <columns large="3">
+          <img class="item-img" src="../assets/img/southwest-burrito.avif" height='90' width='90' />
+        </columns>
+        <columns large="6" class="item-description">
+          <row class="item-title">
+            <columns>
+              <span>Surf & Turf Burrito</span>
+            </columns>
+          </row>
+          <row class="item-quantity">
+            <columns>
+              <span>Quantity: 1</span>
+            </columns>
+          </row>
+        </columns>
+        <columns class="item-price" large="3">
+          <span>$13.40</span>
+        </columns>
+      </row>
+      <row class="item-row">
+        <columns large="3">
+          <img class="item-img" src="../assets/img/southwest-burrito.avif" height='90' width='90' />
+        </columns>
+        <columns large="6" class="item-description">
+          <row class="item-title">
+            <columns>
+              <span>Cilantro Lime Crema Chicken Burrito</span>
+            </columns>
+          </row>
+          <row class="item-quantity">
+            <columns>
+              <span>Quantity: 1</span>
+            </columns>
+          </row>
+        </columns>
+        <columns class="item-price" large="3">
+          <span>$13.40</span>
+        </columns>
+      </row>
+      <row class="divider-line"></row>
+      <row class="order-detail">
+        <columns class="detail-description" large="9" small="9">
+          <span>Subtotal</span>
+        </columns>
+        <columns class="detail-price" large="3" small="3">
+          <span>$64.40</span>
+        </columns>
+      </row>
+      <row class="order-detail">
+        <columns class="detail-description" large="9" small="9">
+          <span>Delivery Fee</span>
+        </columns>
+        <columns class="detail-price price-nudge" large="3" small="3">
+          <span>$3.99</span>
+        </columns>
+      </row>
+      <row class="order-detail">
+        <columns class="detail-description" large="9" small="9">
+          <span>Tax</span>
+        </columns>
+        <columns class="detail-price" large="3" small="3">
+          <span>$15.21</span>
+        </columns>
+      </row>
+      <row class="divider-line"></row>
+      <row class="order-total">
+        <columns class="total-title" large="8" small="8">
+          <span>Total</span>
+        </columns>
+        <columns class="total-price" large="4" small="4">
+          <span>$83.60</span>
+        </columns>
+      </row>
+    </columns>
+  </row>
+  <row class="thanks-row">
+    <columns class="thanks-col">
+      <span class="thanks-text">Thank You For Ordering With Us!</span>
+    </columns>
+  </row>
+</container>
+<container class="rewards-container">
   <row>
     <columns>
-      <img src='../assets/img/qdoba-logo.png' height='90' width='90' alt='Company' />
+      <img class="rewards-img" src="../assets/img/q.png" height='280' width='280' />
+    </columns>
+  </row>
+</container>
+<container class="footer-container">
+  <row>
+    <columns>
+      <span class="email-text">This email was sent to &nbsp;<i>johnappleseed@gmail.com</i></span>
+    </columns>
+  </row>
+  <row>
+    <columns large="6" small="6" class="privacy-text">
+      <span>Privacy Policy</span>
+    </columns>
+    <columns large="6" small="6" class="contact-text">
+      <span>Contact Use</span>
+    </columns>
+  </row>
+  <row class="social-row">
+    <columns small="2" large="3" class="small-offset-1 large-offset-2">
+      <img class="x-logo" src="../assets/img/x-logo.webp" width="40" height="40" >
+    </columns>
+    <columns small="2" large="3" class="small-offset-1 large-offset-1">
+      <img class="instagram-logo" src="../assets/img/instagram-logo.png" width="40" height="40">
+    </columns>
+    <columns small="2" large="2" class="small-offset-1">
+      <img class="linkedin-logo" src="../assets/img/linkedin-logo.png" width="40" height="40">
+    </columns>
+    <columns small="2" large="3" class="small-offset-1">
+      <img class="tiktok-logo" src="../assets/img/tiktok-logo.png" width="40" height="40">
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <span>Qdoba Restaurant Corporation | 350 Camino de la Reina <br />| San Diego, California 92108, US</span>
     </columns>
   </row>
 </container>

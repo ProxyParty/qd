@@ -51,8 +51,12 @@ img.transaction-header {
   color: #ffeed1;
   font-size: 40px;
   font-weight: 700;
-  top: 30%;
-  left: 6%;
+  background-image: url("https://i.ibb.co/GtDB0BX/header-banner.jpg");
+  background-size: contain;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .container.button-container {
   height: 100px;
@@ -66,8 +70,8 @@ img.transaction-header {
     justify-content: center;
     width: 210px;
     padding: 10px 0px;
-    top: 27%;
-    left: 34%;
+    margin-top: 27px;
+    margin-left: 213px;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -81,22 +85,22 @@ img.transaction-header {
     outline: #f09800 2px solid;
     background-color: #fff5eb;
     position: relative;
-    left: 6.3%;
+    margin-left: 6.3%;
     .summary-text {
       position: relative;
       color: #f09800;
       font-weight: 700;
       font-size: 24px;
       display: flex;
-      justify-content: center;
       padding-top: 25px;
+      margin-left: 12rem;
     }
     .divider-line {
       background-color: #f09800;
       height: 1.5px;
       width: 30rem;
       display: flex;
-      left: 7%;
+      margin-left: 2.5rem;
       position: relative;
       margin-top: 15px;
     }
@@ -179,12 +183,11 @@ img.transaction-header {
   .thanks-col {
     background-color: #f09800;
     padding: 5px 0;
-    display: grid;
-    justify-content: center;
     & .thanks-text {
       font-size: 36px;
       font-weight: 700;
       color: white;
+      padding-left: 3rem;
     }
   }
 }
@@ -203,6 +206,7 @@ img.transaction-header {
   .email-text {
     padding-top: 40px;
     padding-bottom: 10px;
+    padding-left: 20%;
   }
   .privacy-text span {
     padding-left: 9rem;
@@ -213,6 +217,7 @@ img.transaction-header {
     padding-right: 9rem;
     padding-bottom: 10px;
     text-decoration: underline;
+    padding-left: 20%;
   }
   .social-row .columns {
     padding-top: 10px;
@@ -226,11 +231,15 @@ img.transaction-header {
       background-color: #fff;
     }
   }
+  .address-text {
+    padding-left: 18% !important;
+    & span {
+      text-align: center;
+    }
+  }
   span {
     color: white;
     display: flex;
-    justify-content: center;
-    text-align: center;
     padding-right: 20px;
   }
 }
